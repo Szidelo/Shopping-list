@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<title>Shopping list</title>
+		<!-- MDB icon -->
+		<!-- <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" /> -->
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		/>
+		<!-- Google Fonts Roboto -->
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+		/>
+		<!-- MDB -->
+		<link rel="stylesheet" href="css/mdb.min.css" />
+		<style>
+			#intro {
+				background-image: url("pexels-leeloo-thefirst-5556311 (1).jpg");
+				height: 30vh;
+			}
+
+			.line-through {
+				text-decoration: line-through;
+				color: rgba(150, 8, 8, 0.5);
+				transition: all 0.5s ease-in-out;
+			}
+			button i {
+				font-size: 1em; /* Reset font size to 1em */
+			}
+
+			button i.fa-2x {
+				font-size: 3em; /* Make the icon 2 times the size of its parent */
+			}
+
+			span {
+				text-transform: capitalize;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Start your project here-->
+
+		<!--header start-->
+
+		<div id="intro" class="bg-image shadow-2-strong">
+			<div
+				class="mask d-flex align-items-center h-100"
+				style="background-color: rgba(0, 0, 0, 0.6)"
+			>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-xl-5 col-md">
+							<h1 class="display-1 text-info">
+								<strong>ShoOping LisT</strong>
+							</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--header end-->
+
+		<!-- nav section start-->
+
+		<ul
+			class="nav nav-pills mb-3 d-flex justify-content-center align-items-center mt-5"
+			id="pills-tab2"
+			role="tablist"
+		>
+			<li class="nav-item" role="presentation">
+				<button
+					class="nav-link active"
+					id="pills-home-tab2"
+					data-mdb-toggle="pill"
+					data-mdb-target="#pills-home2"
+					type="button"
+					role="tab"
+					aria-controls="pills-home"
+					aria-selected="true"
+				>
+					Food
+				</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button
+					class="nav-link"
+					id="pills-profile-tab2"
+					data-mdb-toggle="pill"
+					data-mdb-target="#pills-profile2"
+					type="button"
+					role="tab"
+					aria-controls="pills-profile"
+					aria-selected="false"
+				>
+					Clothing
+				</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button
+					class="nav-link"
+					id="pills-contact-tab2"
+					data-mdb-toggle="pill"
+					data-mdb-target="#pills-contact2"
+					type="button"
+					role="tab"
+					aria-controls="pills-contact"
+					aria-selected="false"
+				>
+					Gadgets
+				</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button type="button" id="clear" class="btn btn-lg btn-danger">
+					<i class="fas fa-eraser"></i>
+				</button>
+			</li>
+		</ul>
+
+		<!-- nav section end-->
+
+		<!-- list start-->
+
+		<div class="tab-content mb-5" id="pills-tabContent2">
+			<div
+				class="tab-pane fade show active"
+				id="pills-home2"
+				role="tabpanel"
+				aria-labelledby="pills-home-tab2"
+			>
+				<div
+					class="h-100 d-flex justify-content-center align-items-center mt-5"
+				>
+					<div
+						class="row d-flex align-items-center w-75"
+						style="max-width: 440px"
+					>
+						<div class="col-12 mb-2 d-flex">
+							<div class="input-group">
+								<div class="form-outline">
+									<input type="search" id="foodInput" class="form-control" />
+									<label class="form-label" for="foodInput"
+										>Add some food</label
+									>
+								</div>
+								<button type="button" id="addFood" class="btn btn-primary p-1">
+									<i class="fas fa-plus-square fa-2x"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div
+					class="h-100 d-flex justify-content-center align-items-center mt-5"
+				>
+					<ul class="list-group w-100" id="foodList" style="max-width: 400px">
+						<!-- <li
+							class="list-group-item active d-flex justify-content-between align-items-center row"
+						>
+							<div class="col-9 d-flex">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									aria-label="..."
+								/>
+								<span>Potato</span>
+							</div>
+							<div class="col-3 text-end">
+								<i class="fas fa-trash-alt" style="cursor: pointer"></i>
+							</div>
+						</li>
+						<li
+							class="list-group-item d-flex justify-content-between align-items-center row"
+						>
+							<div class="col-9 d-flex">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									aria-label="..."
+								/>
+								<span>Tomato</span>
+							</div>
+							<div class="col-3 text-end">
+								<i class="fas fa-trash-alt" style="cursor: pointer"></i>
+							</div>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+			<div
+				class="tab-pane fade"
+				id="pills-profile2"
+				role="tabpanel"
+				aria-labelledby="pills-profile-tab2"
+			>
+				<div
+					class="h-100 d-flex justify-content-center align-items-center mt-5"
+				>
+					<div
+						class="row d-flex align-items-center w-75"
+						style="max-width: 440px"
+					>
+						<div class="col-12 mb-2 d-flex">
+							<div class="input-group">
+								<div class="form-outline">
+									<input type="search" id="clothInput" class="form-control" />
+									<label class="form-label" for="clothInput"
+										>Add some fashion</label
+									>
+								</div>
+								<button type="button" id="addCloth" class="btn btn-primary p-1">
+									<i class="fas fa-plus-square fa-2x"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="h-100 d-flex justify-content-center align-items-center mt-5"
+				>
+					<ul class="list-group w-75" id="clothList" style="max-width: 400px">
+						<!-- <li
+							class="list-group-item active d-flex justify-content-between align-items-center row"
+						>
+							<div class="col-9 d-flex">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									aria-label="..."
+								/>
+								<span>Shoes</span>
+							</div>
+							<div class="col-3 text-end">
+								<i class="fas fa-trash-alt" style="cursor: pointer"></i>
+							</div>
+						</li>
+						<li
+							class="list-group-item d-flex justify-content-between align-items-center row"
+						>
+							<div class="col-9 d-flex">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									aria-label="..."
+								/>
+								<span>Hat</span>
+							</div>
+							<div class="col-3 text-end">
+								<i class="fas fa-trash-alt" style="cursor: pointer"></i>
+							</div>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+			<div
+				class="tab-pane fade"
+				id="pills-contact2"
+				role="tabpanel"
+				aria-labelledby="pills-contact-tab2"
+			>
+				<div
+					class="h-100 d-flex justify-content-center align-items-center mt-5"
+				>
+					<div
+						class="row d-flex align-items-center w-75"
+						style="max-width: 440px"
+					>
+						<div class="col-12 mb-2 d-flex">
+							<div class="input-group">
+								<div class="form-outline">
+									<input type="search" id="gadgetInput" class="form-control" />
+									<label class="form-label" for="gadgetInput"
+										>Add some technology</label
+									>
+								</div>
+								<button type="button" id="addGadget" class="btn btn-primary p-1">
+									<i class="fas fa-plus-square fa-2x"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="h-100 d-flex justify-content-center align-items-center mt-5"
+				>
+					<ul class="list-group w-75" id="gadgetList" style="max-width: 400px">
+						<!-- <li
+							class="list-group-item active d-flex justify-content-between align-items-center row"
+						>
+							<div class="col-9 d-flex">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									aria-label="..."
+								/>
+								<span>Phone</span>
+							</div>
+							<div class="col-3 text-end">
+								<i class="fas fa-trash-alt" style="cursor: pointer"></i>
+							</div>
+						</li>
+						<li
+							class="list-group-item d-flex justify-content-between align-items-center row"
+						>
+							<div class="col-9 d-flex">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									aria-label="..."
+								/>
+								<span>Laptop</span>
+							</div>
+							<div class="col-3 text-end">
+								<i class="fas fa-trash-alt" style="cursor: pointer"></i>
+							</div>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- list end-->
+
+		<!-- End your project here-->
+
+		<!-- MDB -->
+		<script type="text/javascript" src="js/mdb.min.js"></script>
+		<!-- Custom scripts -->
+		<script type="text/javascript"></script>
+		<script src="jquery-3.6.3.min.js"></script>
+		<script src="app.js"></script>
+		<script src="clothingApp.js"></script>
+		<script src="electronics.js"></script>
+	</body>
+</html>
