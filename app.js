@@ -6,25 +6,15 @@ $(document).ready(function () {
 	// List Selectors
 
 	const foodList = $("#foodList");
-	const clothList = $("#clothList");
-	const gadgetList = $("#gadgetList");
 
 	// Input for every list Selectors
 
 	const inputForFood = $("#foodInput");
-	const inputForCloth = $("#clothInput");
-	const inputForGadget = $("#gadgetInput");
+
 
 	// Add btn for every list Selector
 
 	const addBtnFood = $("#addFood");
-	const addBtnCloth = $("#addCloth");
-	const addBtnGadget = $("#addGadget");
-
-	// List elements Selector
-
-	const checkBtn = $(".form-check-input");
-	const listText = $("span");
 
 	// To Do function
 

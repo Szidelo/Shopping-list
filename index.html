@@ -119,12 +119,24 @@
 					Gadgets
 				</button>
 			</li>
-			<li class="nav-item" role="presentation">
+			<!-- <li class="nav-item" role="presentation">
 				<button type="button" id="clear" class="btn btn-lg btn-danger">
-					<i class="fas fa-eraser"></i>
+					CLEAR ALL
 				</button>
-			</li>
+			</li> -->
 		</ul>
+
+		<div class="h-100 d-flex justify-content-center align-items-center">
+			<div class="row d-flex align-items-center w-100" style="max-width: 440px">
+				<div class="col-12 w-100 mb-2 d-flex">
+					<div class="col-12">
+						<button type="button" id="clear" class="col-12 btn btn-lg btn-danger">
+							CLEAR ALL
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- nav section end-->
 
@@ -141,11 +153,11 @@
 					class="h-100 d-flex justify-content-center align-items-center mt-5"
 				>
 					<div
-						class="row d-flex align-items-center w-75"
+						class="row d-flex align-items-center w-100"
 						style="max-width: 440px"
 					>
-						<div class="col-12 mb-2 d-flex">
-							<div class="input-group">
+						<div class="col-12 w-100 mb-2 d-flex">
+							<div class="input-group col-12">
 								<div class="form-outline">
 									<input type="search" id="foodInput" class="form-control" />
 									<label class="form-label" for="foodInput"
@@ -163,40 +175,11 @@
 				<div
 					class="h-100 d-flex justify-content-center align-items-center mt-5"
 				>
-					<ul class="list-group w-100" id="foodList" style="max-width: 400px">
-						<!-- <li
-							class="list-group-item active d-flex justify-content-between align-items-center row"
-						>
-							<div class="col-9 d-flex">
-								<input
-									class="form-check-input"
-									type="checkbox"
-									value=""
-									aria-label="..."
-								/>
-								<span>Potato</span>
-							</div>
-							<div class="col-3 text-end">
-								<i class="fas fa-trash-alt" style="cursor: pointer"></i>
-							</div>
-						</li>
-						<li
-							class="list-group-item d-flex justify-content-between align-items-center row"
-						>
-							<div class="col-9 d-flex">
-								<input
-									class="form-check-input"
-									type="checkbox"
-									value=""
-									aria-label="..."
-								/>
-								<span>Tomato</span>
-							</div>
-							<div class="col-3 text-end">
-								<i class="fas fa-trash-alt" style="cursor: pointer"></i>
-							</div>
-						</li> -->
-					</ul>
+					<ul
+						class="list-group w-100"
+						id="foodList"
+						style="max-width: 400px"
+					></ul>
 				</div>
 			</div>
 			<div
@@ -209,11 +192,11 @@
 					class="h-100 d-flex justify-content-center align-items-center mt-5"
 				>
 					<div
-						class="row d-flex align-items-center w-75"
+						class="row d-flex align-items-center w-100"
 						style="max-width: 440px"
 					>
-						<div class="col-12 mb-2 d-flex">
-							<div class="input-group">
+						<div class="col-12 w-100 mb-2 d-flex">
+							<div class="input-group col-12">
 								<div class="form-outline">
 									<input type="search" id="clothInput" class="form-control" />
 									<label class="form-label" for="clothInput"
@@ -230,40 +213,11 @@
 				<div
 					class="h-100 d-flex justify-content-center align-items-center mt-5"
 				>
-					<ul class="list-group w-75" id="clothList" style="max-width: 400px">
-						<!-- <li
-							class="list-group-item active d-flex justify-content-between align-items-center row"
-						>
-							<div class="col-9 d-flex">
-								<input
-									class="form-check-input"
-									type="checkbox"
-									value=""
-									aria-label="..."
-								/>
-								<span>Shoes</span>
-							</div>
-							<div class="col-3 text-end">
-								<i class="fas fa-trash-alt" style="cursor: pointer"></i>
-							</div>
-						</li>
-						<li
-							class="list-group-item d-flex justify-content-between align-items-center row"
-						>
-							<div class="col-9 d-flex">
-								<input
-									class="form-check-input"
-									type="checkbox"
-									value=""
-									aria-label="..."
-								/>
-								<span>Hat</span>
-							</div>
-							<div class="col-3 text-end">
-								<i class="fas fa-trash-alt" style="cursor: pointer"></i>
-							</div>
-						</li> -->
-					</ul>
+					<ul
+						class="list-group w-100"
+						id="clothList"
+						style="max-width: 400px"
+					></ul>
 				</div>
 			</div>
 			<div
@@ -276,18 +230,22 @@
 					class="h-100 d-flex justify-content-center align-items-center mt-5"
 				>
 					<div
-						class="row d-flex align-items-center w-75"
+						class="row d-flex align-items-center w-100"
 						style="max-width: 440px"
 					>
-						<div class="col-12 mb-2 d-flex">
-							<div class="input-group">
+						<div class="col-12 w-100 mb-2 d-flex">
+							<div class="input-group col-12">
 								<div class="form-outline">
 									<input type="search" id="gadgetInput" class="form-control" />
 									<label class="form-label" for="gadgetInput"
 										>Add some technology</label
 									>
 								</div>
-								<button type="button" id="addGadget" class="btn btn-primary p-1">
+								<button
+									type="button"
+									id="addGadget"
+									class="btn btn-primary p-1"
+								>
 									<i class="fas fa-plus-square fa-2x"></i>
 								</button>
 							</div>
@@ -297,7 +255,7 @@
 				<div
 					class="h-100 d-flex justify-content-center align-items-center mt-5"
 				>
-					<ul class="list-group w-75" id="gadgetList" style="max-width: 400px">
+					<ul class="list-group w-100" id="gadgetList" style="max-width: 400px">
 						<!-- <li
 							class="list-group-item active d-flex justify-content-between align-items-center row"
 						>
